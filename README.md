@@ -1,10 +1,10 @@
 <h1 align="center">Lotus Pro theme for Nova</h1>
 
 <p align="center">
-	<img align="center" src="" alt="Lotus Pro theme screenshot">
+	<img align="center" src="https://raw.githubusercontent.com/widersky/nova-lotus-pro-theme/main/Images/screenshot.png" alt="Lotus Pro theme screenshot">
 </p>
 
-Fully handcrafted theme dedicated for Nova editor. The idea wasto create theme that'll be easy for the eyes. The theme includes several base pastel colors that reference the lotus flower.
+Fully handcrafted theme dedicated for Nova editor. The idea was to create theme that'll be easy for the eyes. The theme includes several base pastel colors that reference the lotus flower.
 
 🧪 Tested on PHP, JS, HTML, MD, JSON and CSS files.\
 ✅ The theme supports italic fonts.
