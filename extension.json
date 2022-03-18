@@ -4,5 +4,7 @@
     "organization": "DevBuzz",
     "description": "Fully handcrafted theme dedicated for Nova editor. The idea was to create theme that'll be easy for the eyes. The theme includes several base pastel colors that reference the lotus flower.",
     "version": "1.0.0",
-    "categories": ["themes"]
+    "categories": ["themes"],
+    "repository": "https://github.com/widersky/nova-lotus-pro-theme",
+    "bugs": "https://github.com/widersky/nova-lotus-pro-theme/issues"
 }
