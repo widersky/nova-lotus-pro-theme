@@ -1,0 +1,8 @@
+{
+    "identifier": "eu.devbuzz.LotusPro",
+    "name": "LotusPro",
+    "organization": "DevBuzz",
+    "description": "Fully handcrafted theme dedicated for Nova editor. The idea was to create theme that'll be easy for the eyes. The theme includes several base pastel colors that reference the lotus flower.",
+    "version": "1.0.0",
+    "categories": ["themes"]
+}
