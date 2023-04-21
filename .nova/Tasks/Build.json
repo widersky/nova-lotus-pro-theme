@@ -1,0 +1,8 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nsass --no-source-map .\/src\/Lotus\\ Pro\\ Zen.scss .\/Themes\/Lotus\\ Pro\\ Zen.css"
+    }
+  }
+}

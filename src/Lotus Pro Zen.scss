@@ -1,0 +1,410 @@
+meta {
+	-theme-interface-style: light;
+	-theme-vibrancy: none;
+	-theme-accent-color: false;
+}
+
+// Backgrounds
+$window-background: hsl(72, 29%, 97%);
+$editor-background: hsl(72, 29%, 97%);
+$editor-selected-text-background: hsla(0, 14%, 87%, 0.4);
+$editor-current-line-background: hsla(0, 14%, 87%, 0.2);
+$code-background: rgba(128, 128, 128, 0.2);
+
+// Borders
+$window-border: hsl(72, 29%, 90%);
+$editor-border: hsla(0, 0%, 100%, 0.1);
+$editor-guide: hsla(0, 0%, 100%, 0.1);
+
+// Colors of editor text
+$text-almost-white: hsl(60, 33%, 96%);
+$text-gutter: hsl(240, 0%, 75%);
+$text-comment: hsl(4, 12%, 75%);
+$text-green: hsl(94, 100%, 37%);
+$text-green-darker: hsl(160, 30%, 40%);
+$text-teal: hsl(184, 53%, 48%);
+$text-teal-darker: hsl(161, 30%, 40%);
+$text-blue-gray: hsl(210, 20%, 50%);
+$text-brown: hsl(4, 12%, 37%);
+$text-purple: hsl(293, 14%, 67%);
+$text-orange: hsl(30, 100%, 50%);
+$text-orange-red: hsl(12, 100%, 62%);
+$text-red: hsl(360, 87%, 58%);
+$text-yellow: hsl(45, 100%, 44%);
+$text-indigo: hsl(240, 100%, 72%);
+$text-blue: hsl(207, 100%, 53%);
+
+// Colors of UI text
+$text-ui: hsl(0, 0%, 50%);
+$text-ui-disabled: hsl(0, 0%, 80%);
+
+// Colors of UI elements
+$input-background: hsl(72, 29%, 97%);
+$input-border: hsl(72, 29%, 77%);
+
+// Gradients
+$titlebar-gradient: linear-gradient(hsl(72, 29%, 97%), hsl(72, 29%, 93%));
+$button-gradient: linear-gradient(hsl(72, 29%, 97%), hsl(72, 29%, 93%));
+$button-hovered-gradient: linear-gradient(hsl(72, 29%, 97%), hsl(72, 29%, 93%));
+$button-selected-gradient: linear-gradient(hsl(72, 29%, 97%), hsl(72, 29%, 93%));
+$button-disabled-gradient: linear-gradient(hsl(72, 29%, 97%), hsl(72, 29%, 93%));
+$button-border-gradient: linear-gradient(hsl(225, 29%, 87%), hsl(225, 29%, 83%));
+$button-border-hovered-gradient: linear-gradient(hsl(225, 29%, 87%), hsl(225, 29%, 83%));
+$button-border-selected-gradient: linear-gradient(hsl(225, 29%, 87%), hsl(225, 29%, 83%));
+$button-border-disabled-gradient: linear-gradient(hsl(225, 29%, 87%), hsl(225, 29%, 83%));
+
+// Syntax highlighting
+
+/* Window UI */
+meta.window {
+	background-color: $window-background;
+	border-color: $window-border;
+}
+meta.titlebar {
+	background: $titlebar-gradient;
+	color: $text-ui;
+	border-color: $window-border;
+}
+meta.titlebar.inactive {
+}
+
+/* UI Buttons */
+meta.button {
+	background: $button-gradient;
+	border: $button-border-gradient;
+	color: $text-ui;
+}
+meta.button.highlighted {
+	background: $button-hovered-gradient;
+	border: $button-border-hovered-gradient;
+	color: $text-ui;
+}
+meta.button.selected,
+meta.button.highlighted.selected {
+	background: $button-selected-gradient;
+	border: $button-border-selected-gradient;
+	color: $text-ui;
+}
+meta.button.disabled {
+	background: $button-disabled-gradient;
+	border: $button-border-disabled-gradient;
+	color: $text-ui-disabled;
+}
+
+meta.textfield {
+	background-color: $input-background;
+	border-color: $input-border;
+}
+meta.textfield.highlighted {
+	background-color: $input-background;
+	border-color: $input-border;
+}
+
+/* Text editor styles */
+meta.document {
+	background-color: $editor-background;
+	border-color: $editor-border;
+}
+
+meta.document.button {
+	background: $button-gradient;
+	border: $button-border-gradient;
+	color: $text-ui;
+}
+meta.document.button.disabled {
+	background: $button-disabled-gradient;
+	border: $button-border-disabled-gradient;
+	color: $text-ui-disabled;
+}
+meta.document.button.highlighted {
+	background: $button-hovered-gradient;
+	border: $button-border-hovered-gradient;
+	color: $text-ui;
+}
+
+meta.document.textfield {
+	background-color: $input-background;
+	border-color: $input-border;
+}
+meta.document.textfield.highlighted {
+	background-color: $input-background;
+	border-color: $input-border;
+}
+
+/* Text */
+meta.text {
+	color: $text-ui;
+}
+meta.text.invisible {
+	color: $text-ui-disabled;
+}
+meta.text.selected {
+	background-color: $editor-selected-text-background;
+}
+
+/* Cursor */
+meta.cursor {
+	background-color: $editor-current-line-background;
+}
+
+/* Indentation Guides */
+meta.indentguide {
+	border-color: $editor-guide;
+}
+
+/* Gutter */
+meta.gutter {
+	color: $text-gutter;
+}
+meta.gutter.selected {
+	background-color: $editor-current-line-background;
+	color: $text-ui;
+}
+
+
+/* Syntax highlighting */
+comment {
+	color: $text-comment;
+}
+processing {
+	color: $text-blue-gray
+}
+declaration {
+	color: $text-blue-gray
+}
+bracket {
+	color: $text-brown;
+}
+operator {
+	color: $text-orange-red
+}
+invalid {
+	background-color: $text-orange-red;
+	color: $text-almost-white
+}
+link {
+	color: $text-teal
+}
+
+/* Keywords */
+keyword {
+	color: $text-brown;
+	font-style: italic;
+}
+keyword.modifier {
+	color: $text-orange-red;
+	font-style: italic;
+}
+keyword.condition {
+	color: $text-orange-red;
+}
+keyword.construct {
+	color: $text-teal;
+}
+keyword.statement {
+	color: $text-purple
+}
+keyword.self {
+	color: $text-purple
+}
+keyword.self.prefix {
+	color: $text-teal-darker
+}
+
+/* Values */
+value.boolean {
+	color: $text-red;
+	font-style: italic;
+}
+value.null {
+	color: $text-red;
+	font-style: italic;
+}
+value.number {
+	color: $text-yellow;
+}
+value.entity {
+	color: $text-teal;
+}
+value.symbol {
+	color: $text-teal;
+}
+
+/* Identifiers */
+identifier.type {
+	color: $text-yellow;
+}
+identifier.constant,
+identifier.global,
+identifier.variable {
+	color: $text-teal;
+}
+identifier.constant.prefix,
+identifier.global.prefix,
+identifier.variable.prefix {
+	color: $text-purple
+}
+identifier.property {
+	color: $text-teal
+}
+identifier.property.prefix {
+	color: $text-indigo
+}
+identifier.decorator,
+identifier.function,
+identifier.method {
+	color: $text-yellow
+}
+identifier.key {
+	color: $text-teal
+}
+identifier.argument {
+	color: $text-teal
+}
+identifier.argument.prefix {
+	color: $text-indigo
+}
+
+/* Strings */
+string {
+	color: $text-purple
+}
+string.delimiter {
+	color: $text-brown
+}
+string.escape {
+	color: $text-orange-red
+}
+string.key {
+	color: $text-teal
+}
+string-keyword {
+	color: $text-orange
+}
+string-template {
+	color: $text-orange-red
+}
+regex {
+	color: $text-orange
+}
+regex.escape {
+	color: $text-orange
+}
+cdata {
+	color: $text-blue
+}
+
+/* Markup */
+markup.heading {
+	color: $text-brown
+}
+markup.line {
+	color: $text-yellow
+}
+markup.bold {
+	color: $text-teal
+}
+markup.italic {
+	color: $text-green;
+	font-style: italic
+}
+markup.strikethrough {
+	color: $text-comment
+}
+markup.list.item {
+	color: $text-yellow
+}
+markup.code {
+	background-color: $code-background
+}
+markup.link {
+	color: $text-teal
+}
+
+/* Types */
+definition.class.name,
+definition.type.name,
+definition.package.name,
+definition.enum.name,
+definition.union.name,
+definition.struct.name {
+		
+}
+
+/* Members */
+definition.property.name {
+}
+definition.function.name,
+definition.method.name {
+		
+}
+
+/* Tags */
+tag {
+	color: $text-green-darker
+}
+tag.name {
+	color: $text-teal-darker
+}
+tag.framework {
+	color: $text-purple
+}
+tag.framework.name {
+	color: $text-brown
+}
+tag.attribute.name {
+	color: $text-green
+}
+tag.framework.attribute.name {
+	color: $text-orange-red
+}
+tag.attribute.value {
+	color: $text-orange-red
+}
+tag.attribute.value.delimiter {
+	color: $text-brown
+}
+tag.attribute.operator {
+	color: $text-teal-darker
+}
+tag.attribute.value.link {
+	color: $text-orange-red
+}
+
+/* Styles */
+style.at {
+	color: $text-yellow
+}
+style.selector.element {
+	color: $text-green-darker
+}
+style.selector.identifier.id {
+	color: $text-yellow
+}
+style.selector.identifier.class {
+	color: $text-green-darker
+}
+style.selector.pseudoclass {
+	color: $text-brown
+}
+style.selector.pseudoelement {
+	color: $text-brown
+}
+style.attribute.name {
+	color: $text-brown
+}
+style.value.number {
+	color: $text-red
+}
+style.value.color.hex {
+	color: $text-teal
+}
+style.value.keyword {
+	color: $text-purple
+}
+style.value.color.named {
+	color: $text-green
+}
+style.value.identifier.function {
+	color: $text-green
+}
