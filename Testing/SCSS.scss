@@ -1,0 +1,23 @@
+$variable: rgba(255,255,255,.5);
+
+div {
+	margin: 0 auto;
+	color: red;
+}
+
+#ID {
+	background-color: green;
+	border: 1px solid rgba(255,255,255,.5);
+}
+
+.class {
+	display: flex;
+	flex-direction: row;
+}
+
+.nested {
+	> .class {
+		display: block;
+		border: .25rem solid $variable;
+	}
+}

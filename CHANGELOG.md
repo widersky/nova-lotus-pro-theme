@@ -1,4 +1,13 @@
-## `v 2.0.0` (21.04.2023)
+## v 2.1.0 `(20.05.2023)`
+
+### 🎁 What's new
+* **New** "Northen Night" theme to choose from!
+
+### 🔀 What's changed
+
+* Some cleaning under the hood
+
+## v 2.0.0 `(21.04.2023)`
 
 ### 🎁 What's new
 * **New** "Day" option to choose from!
@@ -10,10 +19,10 @@
 * Some work under the hood to make it easier to maintain the theme
 * Some changes in readme
 
-## `v 1.0.1`
+## v 1.0.1
 
 * Updated extension icon
 
-## `v 1.0.0`
+## v 1.0.0
 
 * Initial release
